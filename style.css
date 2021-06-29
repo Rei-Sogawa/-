@@ -1,0 +1,35 @@
+.column {
+  display: flex;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+
+  border-style: inset;
+  border-width: 3px;
+  border-color: gray;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  font-size: 0;
+}
+
+.open {
+  background-color: lightgray;
+}
+
+.open.bomb {
+  background-color: lightpink;
+}
+
+.flag::before {
+  content: "🚩";
+  font-size: 2rem;
+}
